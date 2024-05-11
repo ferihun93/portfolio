@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>olah_ferenc_adam_portfolio</title>
+    <title>Oláh Ferenc portfolio</title>
     <!-- css -->
     <link rel="stylesheet" href="dist/output.css">
     <!-- icons -->
@@ -11,15 +11,86 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <!-- swiper css-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
-<body>
-    <div class="container mx-auto">
-        <h3>Hello, az én nevem Oláh Ferenc,</h3>
-        <h1 class="text-8xl">Frontend fejlesztő vagyok</h1>
-    </div>
+<body class="bg-primary-hatter">
+    <main class="max-w-[1000px] mx-auto overflow-hidden mt-10 border border-red-600">
+        <div class="container mx-auto grid grid-cols-2 mt-40">
+            <div>
+                <h3 class="-mb-14">Hello, az én nevem Oláh Ferenc,</h3>
+                <h1 class="text-8xl font-extrabold">Frontend fejlesztő vagyok</h1>
+                <button class="btn btn-primary col-start-1">
+                    önéletrajz
+                    <i class="ri-file-download-fill"></i>
+                </button>
+            </div>
+            <div class="flex items-start">
+                <img src="images/madara.png" class="scale-x-[-1] col-start-2 row-start-1" alt="">
+            </div>
+        </div>
+        <!--rólam-->
+        <section class="mt-10 mb-52 container mx-auto" id="about">
+            <div class="flex items-center">
+                <h2 class="sm:text-center mb-3.5 text-5xl font-extrabold relative mr-4">rólam</h2>
+                <div class="flex-grow -mt-2 h-1 bg-primary-secondary rounded-full"></div>
+            </div>
+            <div>
+                <ul class="flex flex-col justify-center items-center h-52">
+                    <li class="md:me-6">HTML</li>
+                    <li class="md:me-6">CSS</li>
+                    <li class="md:me-6">JavaScript</li>
+                    <li class="md:me-6">Node.js</li>
+                    <li class="md:me-6">GIT</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!--projektek-->
+        <section class="mt-10 mb-52 container mx-auto" id="projects">
+            <div class="flex items-center">
+                <h2 class="mb-3.5 pb-2 text-5xl font-extrabold relative mr-4">projektek</h2>
+                <div class="flex-grow -mt-2 h-1 bg-primary-secondary rounded-full"></div>
+            </div>
+            <div class="flex items-center justify-evenly">
+                <img src="" alt="">
+                    <figcaption>Masszázs weblap</figcaption>
+                <img src="" alt="">
+                    <figcaption>Art weblap<figcaption>
+            </div>
+        </section>
+
+        <!-- kapcsolat -->
+        <section class="mt-10 mb-52 container mx-auto" id="contact">
+            <div class="flex items-center">
+                <h2 class="sm:text-center mb-3.5 text-5xl font-extrabold relative mr-4">kapcsolat</h2>
+                <div class=" flex-grow -mt-2 h-1 bg-primary-secondary rounded-full"></div>
+            </div>
+            <div class="max-lg:flex max-lg:justify-start flex justify-center w-2/3 ml-48 max-lg:ml-20 max-xl:ml-20">
+                <p class="mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro aliquam distinctio voluptas nobis, sapiente voluptates fugit placeat. Delectus excepturi quae omnis sint quasi, facilis repellat fuga, explicabo illo quia corporis.</p>
+            </div>
+            <form class="max-lg:flex flex items-center flex-col w-full" action="">
+                <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
+                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">NÉV</label>
+                    <input required type="text" class="bg-primary-hatter border-b-2 w-full">
+                </div>
+                <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
+                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">EMAIL</label>
+                    <input required type="text"  class="bg-primary-hatter border-b-2 w-full">
+                </div>
+                <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
+                    <label for="large-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">ÜZENET</label>
+                    <textarea required type="textarea" id="large-input" class="bg-primary-hatter block border-b-2 w-full h-40"></textarea>
+                </div>
+                <button class="border-primary-secondary border hover:rounded-full rounded-full hover:bg-primary-secondary transition-colors hover:text-primary-hatter hover: pt-5 pr-10 pl-10 pb-4 font-spacegrotesk tracking-widest font-normal mb-3.5 mt-10">Küldés</button>
+        
+                <hr class="bg-primary-secondary w-2/12 h-1">
+            </form>
+            <!-- <img width="48" height="48" src="https://img.icons8.com/fluency/48/double-up.png" alt="double-up"/> -->
+            <button   data-twe-ripple-init data-twe-ripple-color="light" type="button" class="!fixed bottom-5 end-5 hidden transition duration-150 ease-in-out 700" id="btn-back-to-top"><img width="48" height="48" src="https://img.icons8.com/fluency/48/double-up.png" alt="double-up"/></button>
+        </section>
+    </main>
     <!-- scroll reveal js -->
     <script src="js/scrollreveal.min.js"></script>
     <!-- swiper -->

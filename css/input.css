@@ -3,5 +3,31 @@
 @tailwind utilities;
 
 body{
-    @apply font-primary 
+    @apply font-primary text-[22px] text-white;
+}
+
+h1,
+h2{
+    @apply text-primary-secondary;
+}
+
+.h1{
+    @apply text-[64px] lg:text-[84px] leading-none font-bold;
+}
+
+.h2{
+    @apply text-[50px] leading-tight;
+}
+
+.h3{
+    @apply text-[25px];
+}
+
+.btn{
+    @apply h-[50px] px-[30px] w-fit transition-all duration-300 text-white rounded-[18px]
+    flex items-center gap-2;
+}
+
+.btn-primary{
+    @apply bg-primary-secondary text-primary-hatter hover:bg-black hover:text-primary-secondary;
 }

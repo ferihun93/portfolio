@@ -17,7 +17,7 @@ module.exports = {
       primary: 'Poppins, sans-serif',
       secondary: 'Space Grotesk","sans-serif'
     },
-    backgroundImage: {
+    profilePic: {
       profile: 'url(/images/madara.png)'
     },
     extend: {
