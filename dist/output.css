@@ -588,6 +588,10 @@ video {
   position: fixed !important;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -598,6 +602,14 @@ video {
 
 .end-5 {
   inset-inline-end: 1.25rem;
+}
+
+.top-\[90px\] {
+  top: 90px;
+}
+
+.top-\[10px\] {
+  top: 10px;
 }
 
 .col-start-1 {
@@ -802,8 +814,28 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -816,6 +848,10 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-red-600 {
@@ -914,8 +950,45 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-65 {
+  opacity: 0.65;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .transition {
@@ -932,8 +1005,18 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in-out {
@@ -1022,6 +1105,25 @@ h2 {
 .hover\:text-primary-hatter:hover {
   --tw-text-opacity: 1;
   color: rgb(34 31 31 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(166 187 204 / var(--tw-text-opacity));
+}
+
+.hover\:transition:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media not all and (min-width: 1200px) {
@@ -1167,6 +1269,22 @@ h2 {
 }
 
 @media (min-width: 960px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:flex-grow {
+    flex-grow: 1;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;

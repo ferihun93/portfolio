@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,14 @@
 </head>
 <body class="bg-primary-hatter">
     <main class="max-w-[1000px] mx-auto overflow-hidden mt-10">
+        <nav>
+            <ul class="fixed w-full overflow-hidden top-[10px] flex justify-center gap-7 lg:relative lg:flex-grow
+                lg:p-0 lg:h-full transition-all duration-300">
+                <a href="#about" class="hover:text-primary-secondary hover:transition-all"><li>Rólam</li></a>
+                <a href="#projects" class="hover:text-primary-secondary hover:transition-all"><li>Projektek</li></a>
+                <a href="#contact" class="hover:text-primary-secondary hover:transition-all"><li>Kapcsolat</li></a>
+            </ul>
+        </nav>
         <div class="container mx-auto grid grid-cols-2 mt-20">
             <div>
                 <h3>Hello, az én nevem Oláh Ferenc,</h3>
@@ -72,15 +80,15 @@
             </div>
             <form class="max-lg:flex flex items-center flex-col w-full" action="">
                 <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
-                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">NÉV</label>
+                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-white opacity-70">NÉV</label>
                     <input required type="text" class="bg-primary-hatter border-b-2 w-full">
                 </div>
                 <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
-                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">EMAIL</label>
+                    <label for="default-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-white opacity-65">EMAIL</label>
                     <input required type="text"  class="bg-primary-hatter border-b-2 w-full">
                 </div>
                 <div class="max-lg:w-full max-xl:w-full max-2xl:w-1/2 mb-6 w-1/2">
-                    <label for="large-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-gray-900 dark:text-white opacity-50">ÜZENET</label>
+                    <label for="large-input" class="font-spacegrotesk block mb-2 text-sm font-medium text-white opacity-75">ÜZENET</label>
                     <textarea required type="textarea" id="large-input" class="bg-primary-hatter block border-b-2 w-full h-40"></textarea>
                 </div>
                 <button class="border-primary-secondary border hover:rounded-full rounded-full hover:bg-primary-secondary transition-colors hover:text-primary-hatter hover: pt-5 pr-10 pl-10 pb-4 font-spacegrotesk tracking-widest font-normal mb-3.5 mt-10">Küldés</button>
